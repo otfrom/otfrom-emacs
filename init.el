@@ -59,6 +59,7 @@
 (show-paren-mode +1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
+(add-hook 'prog-mode-hook 'linum-mode)
 
 ;; (load-theme 'solarized-dark)
 (load-theme 'emacslive-cyberpunk)
