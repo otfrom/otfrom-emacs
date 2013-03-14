@@ -141,7 +141,9 @@ Display the results in a hyperlinked *compilation* buffer."
 
 (require 'gist)
 
-(require 'git-gutter)
+(require 'git-gutter-fringe)
+(global-set-key (kbd "s-n") 'git-gutter:next-hunk)
+(global-set-key (kbd "s-p") 'git-gutter:previous-hunk)
 (global-git-gutter-mode t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
