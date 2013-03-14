@@ -135,11 +135,14 @@ Display the results in a hyperlinked *compilation* buffer."
   (compile "lein kibit"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Magit Mode
+;; Git Modes
 (require 'magit)
 (global-set-key (kbd "C-x g") 'magit-status)
 
 (require 'gist)
+
+(require 'git-gutter)
+(global-git-gutter-mode t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; erc
