@@ -1,0 +1,14 @@
+elpa/
+url/cookies
+*.elc
+swank
+*~
+\#*\#
+org-clock-save.el
+bookmarks
+custom.el
+tramp
+.org-id-locations
+url
+var
+auto-save-list
