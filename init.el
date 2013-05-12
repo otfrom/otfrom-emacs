@@ -79,8 +79,8 @@
       (set-frame-parameter nil 'alpha '(85 50)))))
 (global-set-key (kbd "C-c t") 'toggle-transparency)
 
-
 (setq notify-method 'notify-via-growl)
+
 (require 'rainbow-mode)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'prog-mode-hook 'rainbow-mode)
@@ -229,4 +229,6 @@ Display the results in a hyperlinked *compilation* buffer."
 
 (setq ispell-program-name "/usr/local/bin/aspell")
 
-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; org-mode
+(setq org-src-fontify-natively t)
