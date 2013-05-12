@@ -234,3 +234,8 @@ Display the results in a hyperlinked *compilation* buffer."
 
 ;; org-mode rss/atom handling
 (load-if-exists "~/.blog-roll.el")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Finis
+(message "Cogito ergo sum.")
+
