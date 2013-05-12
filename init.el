@@ -1,20 +1,19 @@
 ;; Add things to be added
 (add-to-list 'load-path "~/.emacs.d/non-elpa/")
 
+(defun load-if-exists (file)
+  (if (file-exists-p file)
+      (progn
+        (load file)
+        (message (format "Loading file: %s" file)))
+    (message (format "No %s file. So not loading one." file))))
+
 ;; separate the custom stuff from my stuff
 (setq custom-file "~/.emacs.d/custom.el")
-(if (file-exists-p custom-file)
-    (progn
-      (load custom-file)
-      (message (concat "Loading " custom-file ".")))
-  (message (concat "No " custom-file " to load.")))
+(load-if-exists custom-file)
 
 ;; Keep personal things out of here
-(if (file-exists-p "~/.mellon.el")
-    (progn
-      (load "~/.mellon.el")
-      (message "Loading sekrit keys."))
-  (message "No sekrit keys to load."))
+(load-if-exists "~/.mellon.el")
 
 ;; I'm a hippie
 (global-set-key (kbd "M-RET") 'hippie-expand)
