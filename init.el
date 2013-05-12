@@ -114,7 +114,11 @@
 (require 'paredit)
 (require 'rainbow-delimiters)
 (setq lisp-hooks (lambda ()
-		   (eldoc-mode +1)))
+		   (eldoc-mode +1)
+                   (define-key paredit-mode-map
+                     (kbd "{") 'paredit-open-curly)
+                   (define-key paredit-mode-map
+                     (kbd "}") 'paredit-close-curly)))
 (add-hook 'emacs-lisp-mode-hook       lisp-hooks)
 (add-hook 'lisp-mode-hook             lisp-hooks)
 (add-hook 'lisp-interaction-mode-hook lisp-hooks)
