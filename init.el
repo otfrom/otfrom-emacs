@@ -49,7 +49,8 @@
                       markdown-mode
                       org-present
 		      color-theme-solarized
-                      highlight-symbol))
+                      highlight-symbol
+                      notify))
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
@@ -79,6 +80,7 @@
 (global-set-key (kbd "C-c t") 'toggle-transparency)
 
 
+(setq notify-method 'notify-via-growl)
 (require 'rainbow-mode)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'prog-mode-hook 'rainbow-mode)
