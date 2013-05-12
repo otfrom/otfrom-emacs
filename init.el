@@ -121,6 +121,7 @@
 (add-hook 'scheme-mode-hook           lisp-hooks)
 (add-hook 'clojure-mode-hook          lisp-hooks)
 (add-hook 'slime-repl-mode-hook       lisp-hooks)
+(add-hook 'nrepl-mode-hook            lisp-hooks)
 
 (add-hook 'javascript-mode-hook lisp-hooks)
 
