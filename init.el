@@ -63,6 +63,9 @@
 (column-number-mode 1)
 (add-hook 'prog-mode-hook 'linum-mode)
 
+;; human readable dired file sizes
+(setq dired-listing-switches "-alh")
+
 ;; (load-theme 'solarized-dark)
 (load-theme 'emacslive-cyberpunk)
 
