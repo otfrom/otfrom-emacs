@@ -231,3 +231,6 @@ Display the results in a hyperlinked *compilation* buffer."
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; org-mode
 (setq org-src-fontify-natively t)
+
+;; org-mode rss/atom handling
+(load-if-exists "~/.blog-roll.el")
