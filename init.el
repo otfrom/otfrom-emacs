@@ -233,6 +233,8 @@ Display the results in a hyperlinked *compilation* buffer."
 (setq org-src-fontify-natively t)
 
 ;; org-mode rss/atom handling
+
+(setq org-feed-retrieve-method 'curl)
 (load-if-exists "~/.blog-roll.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
