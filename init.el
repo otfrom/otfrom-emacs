@@ -46,6 +46,10 @@
 		      color-theme-solarized
                       highlight-symbol
                       notify))
+;; Add your own packages here.
+(load-if-exists (format "~/localuser/packages.el"))
+
+;; install all of the packages if they don't exist.
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
@@ -168,8 +172,6 @@ Display the results in a hyperlinked *compilation* buffer."
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; erc
-
-
 ;; check channels
 (erc-track-mode t)
 (setq erc-track-exclude-types '("JOIN" "NICK" "PART" "QUIT" "MODE"
@@ -238,6 +240,10 @@ Display the results in a hyperlinked *compilation* buffer."
 
 (setq org-feed-retrieve-method 'curl)
 (load-if-exists "~/.blog-roll.el")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Any extra configuration
+(load-if-exists "~/.emacs.d/localuser/extra-config.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Finis
