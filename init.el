@@ -42,7 +42,7 @@
                       refheap
                       deft
                       markdown-mode
-                      org-present
+                      org-present ; via melpa
 		      color-theme-solarized
                       highlight-symbol
                       notify))
