@@ -15,11 +15,6 @@
 ;; Keep personal things out of here
 (load-if-exists "~/.mellon.el")
 
-;; I'm a hippie
-(global-set-key (kbd "M-RET") 'hippie-expand)
-(put 'downcase-region 'disabled nil)
-(put 'upcase-region 'disabled nil)
-
 (require 'package)
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
 			 ("marmalade" . "http://marmalade-repo.org/packages/")
@@ -53,6 +48,12 @@
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; I'm a hippie and you should be one too
+(global-set-key (kbd "M-RET") 'hippie-expand)
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Look Pretty
