@@ -1,4 +1,7 @@
 elpa/
+emms/*
+eshell/*
+localuser/*
 url/cookies
 *.elc
 swank
