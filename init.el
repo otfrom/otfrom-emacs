@@ -34,6 +34,7 @@
                       rainbow-delimiters
                       rainbow-mode
                       csv-mode
+                      ess ; via melpa
                       magit
                       gist
                       git-gutter
