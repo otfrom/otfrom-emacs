@@ -12,7 +12,7 @@
 (setq custom-file "~/.emacs.d/custom.el")
 (load-if-exists custom-file)
 
-;; Keep personal things out of here
+;; Keep passwords out of here
 (load-if-exists "~/.mellon.el")
 
 (require 'package)
