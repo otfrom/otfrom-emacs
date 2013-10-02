@@ -239,7 +239,7 @@ Display the results in a hyperlinked *compilation* buffer."
 ;; org-mode rss/atom handling
 
 (setq org-feed-retrieve-method 'curl)
-(load-if-exists "~/.blog-roll.el")
+(load-if-exists "~/.emacs.d/localuser/blog-roll.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Any extra configuration
