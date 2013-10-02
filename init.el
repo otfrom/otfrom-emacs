@@ -13,7 +13,7 @@
 (load-if-exists custom-file)
 
 ;; Keep passwords out of here
-(load-if-exists "~/.mellon.el")
+(load-if-exists "~/.emacs.d/localuser/mellon.el")
 
 (require 'package)
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
