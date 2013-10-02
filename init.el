@@ -45,7 +45,7 @@
                       org-present ; via melpa
 		      color-theme-solarized
                       highlight-symbol
-                      notify))
+                      coffee-mode))
 ;; Add your own packages here.
 (load-if-exists (format "~/localuser/packages.el"))
 
