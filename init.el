@@ -248,6 +248,10 @@ Display the results in a hyperlinked *compilation* buffer."
 (load-if-exists "~/.emacs.d/localuser/extra-config.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Start emacs server
+(server-start)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Finis
 (message "Cogito ergo sum.")
 
