@@ -111,6 +111,7 @@
 (require 'clojure-mode)
 (require 'clojure-test-mode)
 (require 'nrepl)
+(setq nrepl-history-file (concat user-emacs-directory "nrepl-history"))
 
 (add-hook 'nrepl-interaction-mode-hook 'nrepl-turn-on-eldoc-mode)
 (add-hook 'nrepl-mode-hook 'subword-mode)
