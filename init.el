@@ -62,6 +62,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Look Pretty
+(set-default-font "-apple-Menlo-medium-normal-normal-*-12-*-*-*-m-0-iso10646-1")
 (show-paren-mode +1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
